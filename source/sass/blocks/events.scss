@@ -1,0 +1,18 @@
+.events {
+
+}
+
+.events__title {
+  @include content;
+
+  margin: 0;
+
+  color: var(--black1);
+  font-family: var(--yandex-black-font);
+  font-size: 32px;
+  line-height: 1;
+  letter-spacing: -2px;
+  vertical-align: top;
+  width: calc(300/311 * 100%);
+
+}
