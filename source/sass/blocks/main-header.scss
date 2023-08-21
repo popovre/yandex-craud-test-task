@@ -1,11 +1,36 @@
 .main-header {
   background-color: var(--default-white);
+  position: relative;
+  background:
+  linear-gradient(to bottom,  rgba(255, 255, 255, 0%), rgba(255, 255, 255, 100%)),
+  linear-gradient(0.25turn, rgba(255, 255, 255, 20%), rgba(255, 255, 255, 20%)),
+  linear-gradient(
+      0.25turn,
+      rgba(255, 92, 77, 20%),
+      rgba(235, 70, 159, 20%),
+      rgba(131, 65, 239, 20%),
+      rgba(63, 104, 249, 20%)
+    ),
 }
 
 .main-header__wrapper {
   @include content;
   padding-top: var(--mobile-padding);
+  padding-bottom: 348px;
 
+  &::after {
+    content: "";
+    position: absolute;
+    background-image: url("../../img/mobile/header-scooter.webp");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: calc(354 / 375 * 100%);
+    height: 308px;
+    bottom: 42px;
+    left: 5px;
+    right: 16px;
+  }
 }
 
 .main-header__logo-link {
@@ -56,7 +81,7 @@
     position: absolute;
     width: 56px;
     height: 23px;
-    background:radial-gradient(circle at bottom left, #B6B9FF, #E0B8FF );
+    background: radial-gradient(circle at bottom left, #b6b9ff, #e0b8ff);
     border-radius: 10px;
     top: 0;
     left: 0;
@@ -73,13 +98,12 @@
     top: 0;
     left: 0;
   }
-
-
 }
 
 .main-header__price-new {
   position: relative;
   z-index: 3;
+  vertical-align: bottom;
 }
 
 .main-header__price-old {
@@ -101,8 +125,3 @@
     z-index: 2;
   }
 }
-
-
-
-
-
