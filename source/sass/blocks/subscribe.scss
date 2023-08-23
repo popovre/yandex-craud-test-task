@@ -1,0 +1,41 @@
+.subscribe__wrapper {
+  @include content;
+}
+
+.subscribe__cashback-wrapper {
+  position: relative;
+  padding-bottom: 376px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: calc(50% - (360px / 2));
+    bottom: 0;
+    width: 360px;
+    height: 374px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url("../../img/mobile/subcribe__background.webp");
+  }
+}
+
+.subscribe__title {
+  margin: 0;
+  margin-bottom: 32px;
+
+  font-family: var(--yandex-black-font);
+  font-size: 32px;
+  line-height: 1;
+  letter-spacing: -2px;
+  vertical-align: top;
+  width: calc(290/311 * 100%);
+  font-weight: 900;
+}
+
+.subscribe__text {
+  margin: 0;
+  font-size: 16px;
+  line-height: 120%;
+}
+

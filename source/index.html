@@ -67,7 +67,9 @@
       </section>
       <section class="events">
         <div class="events__text-wrapper">
-          <h2 class="events__title">Эксклюзивный доступ к событиям Самокатов</h2>
+          <h2 class="events__title">
+            Эксклюзивный доступ к событиям Самокатов
+          </h2>
           <p class="events__specials-text">
             С абонементом — у вас доступ к специальным мероприятиям, скидки
             и классный мерч. В 2023 году мы танцевали на Даче Плюс с Антохой MC,
@@ -103,32 +105,50 @@
             </li>
           </ul>
           <div class="events__slider-buttons">
-            <button class="events__slider-left"></button>
-            <button class="events__slider-right"></button>
+            <button
+              class="events__slider-left events__slider-button"
+              type="button"
+            >
+              <svg class="events__slider-left-svg" width="27" height="24">
+                <use xlink:href="img/icons/sprite.svg#arrow-left"></use>
+              </svg>
+            </button>
+            <button
+              class="events__slider-right events__slider-button"
+              type="button"
+            >
+              <svg class="events__slider-right-svg" width="27" height="24">
+                <use xlink:href="img/icons/sprite.svg#arrow-right"></use>
+              </svg>
+            </button>
           </div>
         </div>
       </section>
       <section class="subscribe">
-        <h2 class="subscribe__title">
-          Купить абонемент и вступить в клуб смогут те, кто в Плюсе
-        </h2>
-        <p class="subscribe__cashback">
-          За каждую поездку на самокатах такие пользователи получают кешбэк
-          баллами. Баллы можно тратить на поездки на самокатах и такси
-          с Яндекс Go, покупки и заказы в других сервисах Яндекса
-        </p>
-      </section>
-      <section class="club">
-        <h2 class="club__title">
-          80  % наших пользователей уже в клубе и экономят на поездках
-        </h2>
-        <p class="club__subscribe">
-          Присоединяйтесь — опция начнёт действовать в начале сезона–2024.
-          Об открытии сезона предупредим заранее, чтобы вы были готовы
-        </p>
-        <button class="club__button-subscribe" type="button">
-          Хочу абонемент
-        </button>
+        <div class="subscribe__wrapper">
+          <div class="subscribe__cashback-wrapper">
+            <h2 class="subscribe__title">
+              Купить абонемент и вступить в клуб смогут те, кто в Плюсе
+            </h2>
+            <p class="subscribe__cashback subscribe__text">
+              За каждую поездку на самокатах такие пользователи получают кешбэк&nbsp;
+              баллами. Баллы можно тратить на поездки на самокатах и такси
+              с Яндекс Go, покупки и заказы в других сервисах Яндекса
+            </p>
+          </div>
+          <div class="subscribe__options-wrapper">
+            <h2 class="subscribe__title subscribe__club-title">
+              80  % наших пользователей уже в клубе и экономят на поездках
+            </h2>
+            <p class="subscribe__options subscribe__text">
+              Присоединяйтесь — опция начнёт действовать в начале сезона–2024.
+              Об открытии сезона предупредим заранее, чтобы вы были готовы
+            </p>
+            <button class="subscribe__button" type="button">
+              Хочу абонемент
+            </button>
+          </div>
+        </div>
       </section>
     </main>
     <footer class="maun-footer">

@@ -1,3 +1,7 @@
+.events {
+  padding-bottom: 72px;
+}
+
 .events__text-wrapper {
   @include content;
   font-weight: 500;
@@ -72,4 +76,22 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+}
+
+.events__slider-button {
+  @include btnres;
+
+  width: 48px;
+  height: 48px;
+
+  border-radius: 50%;
+  background-color: var(--yellow1);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.events__slider-left {
+  opacity: 50%;
 }
