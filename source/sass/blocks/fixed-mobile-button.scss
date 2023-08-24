@@ -1,0 +1,25 @@
+.fixed-mobile-button {
+  @include btnres;
+  position: fixed;
+  bottom: 24px;
+
+  width: 311px;
+  left: calc(50% - (311px / 2));
+  min-height: 49px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-style: var(--yandex-medium-font);
+  font-size: 18px;
+  line-height: 22px;
+  color: var(--black1);
+  font-weight: 500;
+
+  border-radius: 36px;
+  background-color: var(--yellow1);
+
+  @include tablet-w {
+    display: none;
+  }
+}
