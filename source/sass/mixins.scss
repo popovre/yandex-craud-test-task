@@ -78,6 +78,6 @@ $mobile-width: 375px;
   @include desktop-w () {
     max-width: var(--desktop-width);
     padding-left: var(--desktop-l-padding);
-    padding-right: var(--desktop-r-padding);
+    padding-right: var(--desktop-l-padding);
   }
 }

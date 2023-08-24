@@ -28,12 +28,14 @@
   row-gap: 24px;
   justify-content: center;
   width: calc(212/311 * 100%);
-  margin-left: auto;
-
+  margin-left: 99px;
 }
 
 .advantages__item {
   position: relative;
+  min-height: 83px;
+  display: flex;
+  align-items: center;
 
   &::before {
     content: "";

@@ -1,22 +1,32 @@
 .main-header {
   background-color: var(--default-white);
-  position: relative;
-  background:
-  linear-gradient(to bottom,  rgba(255, 255, 255, 0%), rgba(255, 255, 255, 100%)),
-  linear-gradient(0.25turn, rgba(255, 255, 255, 20%), rgba(255, 255, 255, 20%)),
-  linear-gradient(
+  background: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0%),
+      rgba(255, 255, 255, 100%)
+    ),
+    linear-gradient(
+      0.25turn,
+      rgba(255, 255, 255, 20%),
+      rgba(255, 255, 255, 20%)
+    ),
+    linear-gradient(
       0.25turn,
       rgba(255, 92, 77, 20%),
       rgba(235, 70, 159, 20%),
       rgba(131, 65, 239, 20%),
       rgba(63, 104, 249, 20%)
-    ),
+    );
+
+  @include desktop-w {
+  }
 }
 
 .main-header__wrapper {
   @include content;
   padding-top: var(--mobile-padding);
   padding-bottom: 348px;
+  position: relative;
 
   &::after {
     content: "";
@@ -31,10 +41,30 @@
     left: 5px;
     right: 16px;
   }
+
+  @include desktop-w {
+    padding-top: 125px;
+  }
+}
+
+.main-header__logo-wrapper {
+  line-height: 0;
 }
 
 .main-header__logo-link {
-  margin-bottom: var(--mobile-padding);
+  display: block;
+  margin-bottom: 32px;
+
+  @include desktop-w {
+    margin-bottom: 72px;
+  }
+}
+
+.main-header__logo {
+  @include desktop-w {
+    width: 176px;
+    height: 50px;
+  }
 }
 
 .main-header__title {
@@ -54,6 +84,14 @@
 
   &::first-letter {
     text-transform: uppercase;
+  }
+
+  @include desktop-w {
+    -webkit-text-stroke: none;
+    text-shadow: none;
+    font-size: 72px;
+    line-height: 66px;
+    width: 420px;
   }
 }
 
@@ -123,5 +161,31 @@
     width: 37px;
     height: 1px;
     z-index: 2;
+  }
+}
+
+.main-header__club-button {
+  @include btnres;
+  position: fixed;
+  bottom: 24px;
+  width: 311px;
+  left: calc(50% - (311px / 2));
+  min-height: 49px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 3;
+
+  font-style: var(--yandex-medium-font);
+  font-size: 18px;
+  line-height: 22px;
+  color: var(--black1);
+  font-weight: 500;
+
+  border-radius: 36px;
+  background-color: var(--yellow1);
+
+  @include tablet-w {
+    display: none;
   }
 }
