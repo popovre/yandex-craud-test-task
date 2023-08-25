@@ -19,6 +19,25 @@
     );
 
   @include desktop-w {
+    background: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0%),
+      rgba(255, 255, 255, 100%)
+    ),
+    linear-gradient(
+      0.25turn,
+      rgba(255, 255, 255, 20%),
+      rgba(255, 255, 255, 20%)
+    ),
+    linear-gradient(
+      0.25turn,
+      rgba(255, 92, 77, 20%),
+      rgba(235, 70, 159, 20%),
+      rgba(131, 65, 239, 20%),
+      rgba(63, 104, 249, 20%)
+    ),
+    radial-gradient(ellipse at center,#8241EF,rgba(130, 65, 239, 30%), rgba(130, 65, 239, 20%), rgba(130, 65, 239, 6%))
+    ;
   }
 }
 
@@ -44,6 +63,16 @@
 
   @include desktop-w {
     padding-top: 125px;
+    padding-bottom: 124px;
+    padding-right: 75px;
+
+    &::after {
+      background-image: url("../../img/desktop/header-background.webp");
+      width: 823px;
+      height: 716px;
+      right: 75px;
+      left: auto;
+    }
   }
 }
 
@@ -87,15 +116,17 @@
   }
 
   @include desktop-w {
-    -webkit-text-stroke: none;
+    position: relative;
+    -webkit-text-stroke: 0;
     text-shadow: none;
     font-size: 72px;
     line-height: 66px;
     width: 420px;
+    z-index: 2;
   }
 }
 
-.main-header__invite p {
+.main-header__invite-text {
   display: block;
   margin: 0;
 
@@ -106,6 +137,16 @@
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 25%);
   line-height: 130%;
   -webkit-text-stroke: 2px #000000;
+
+  @include desktop-w {
+    width: 420px;
+    font-size: 24px;
+    -webkit-text-stroke: 0;
+    text-shadow: none;
+    line-height: 26px;
+
+    margin-bottom: 44px;
+  }
 }
 
 .main-header__prices {
@@ -131,10 +172,35 @@
     position: absolute;
     width: 102px;
     height: 23px;
-    background-color: rgba(241, 241, 241, 60%);
+    background: linear-gradient(
+          to bottom,
+          rgba(241, 241, 241, 60%),
+          rgba(241, 241, 241, 60%)
+        ),
+        radial-gradient(circle at bottom left, #e0b8ff, #b6b9ff);
     border-radius: 10px;
     top: 0;
     left: 0;
+  }
+
+  @include desktop-w {
+    &::before {
+      width: 79px;
+      height: 33px;
+      border-radius: 15px;
+    }
+
+    &::after {
+      width: 149px;
+      height: 33px;
+      border-radius: 15px;
+      background: linear-gradient(
+          to bottom,
+          rgba(241, 241, 241, 60%),
+          rgba(241, 241, 241, 60%)
+        ),
+        radial-gradient(circle at bottom left, #e0b8ff, #b6b9ff);
+    }
   }
 }
 
@@ -142,6 +208,13 @@
   position: relative;
   z-index: 3;
   vertical-align: bottom;
+  padding-left: 7px;
+  padding-right: 8px;
+
+  @include desktop-w {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
 }
 
 .main-header__price-old {
@@ -161,6 +234,16 @@
     width: 37px;
     height: 1px;
     z-index: 2;
+  }
+
+  @include desktop-w {
+    font-size: 16px;
+    padding-left: 10px;
+    padding-right: 12px;
+
+    &::after {
+      left: 10px
+    }
   }
 }
 
@@ -187,5 +270,16 @@
 
   @include tablet-w {
     display: none;
+  }
+
+  @include desktop-w {
+    display: block;
+    position: static;
+
+    width: 318px;
+    min-height: 65px;
+
+    font-size: 24px;
+    box-shadow: 0 4px 98px 0 rgba(255, 222, 64, 59%);
   }
 }
