@@ -18,6 +18,13 @@
   &::first-letter {
     text-transform: uppercase;
   }
+
+  @include desktop-w {
+    font-size: 56px;
+    line-height: 48px;
+    width: 600px;
+    margin-bottom: 48px;
+  }
 }
 
 .advantages__list {
@@ -25,10 +32,21 @@
 
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   row-gap: 24px;
   justify-content: center;
   width: calc(212/311 * 100%);
   margin-left: 99px;
+
+  @include desktop-w {
+    flex-direction: row;
+    column-gap: 112px;
+    row-gap: 61px;
+    margin-left: 0;
+    justify-content: flex-start;
+    width: 100%;
+  }
+
 }
 
 .advantages__item {
@@ -47,6 +65,24 @@
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
+  }
+
+  @include desktop-w {
+    align-items: flex-start;
+    padding-top: 99px;
+
+    &:nth-child(odd) {
+      width: 362px;
+    }
+
+    &:nth-child(even) {
+      width: 400px;
+    }
+
+    &::before {
+      top: 0;
+      left: 0;
+    }
   }
 }
 
@@ -81,8 +117,12 @@
 .advantages__item-text {
   margin: 0;
 
-  font-style: var(--yandex-medium-font);
+  font-family: var(--yandex-medium-font);
   font-size: 16px;
   color: var(--black1);
   line-height: 120%;
+
+  @include desktop-w {
+    font-size: 24px;
+  }
 }
