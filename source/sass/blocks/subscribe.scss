@@ -1,6 +1,16 @@
 .subscribe__wrapper {
   @include content;
   padding-bottom: 90px;
+
+  @include desktop-w {
+    padding-left: 260px;
+    padding-right: 285px;
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    row-gap: 128px;
+  }
 }
 
 .subscribe__cashback-wrapper {
@@ -17,7 +27,11 @@
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
-    background-image: url("../../img/mobile/subcribe__background.webp");
+    background-image: url("../../img/mobile/subcribe-cashback-background.webp");
+  }
+
+  @include desktop-w {
+    width: 419px;
   }
 }
 
@@ -32,6 +46,11 @@
   vertical-align: top;
   width: calc(290/311 * 100%);
   font-weight: 900;
+
+  @include desktop-w {
+    font-size: 48px;
+    margin-bottom: 48px;
+  }
 }
 
 .subscribe__text {
@@ -40,6 +59,10 @@
   line-height: 120%;
   font-family: var(--yandex-medium-font);
   font-weight: 500;
+
+  @include desktop-w {
+    font-size: 24px;
+  }
 }
 
 .subscribe__options {

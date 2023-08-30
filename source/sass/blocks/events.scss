@@ -1,5 +1,9 @@
 .events {
   padding-bottom: 72px;
+
+  @include desktop-w {
+    padding-bottom: 88px
+  }
 }
 
 .events__text-wrapper {
@@ -7,6 +11,10 @@
   font-weight: 500;
 
   margin-bottom: 48px;
+
+  @include desktop-w {
+    margin-bottom: 0;
+  }
 }
 
 .events__title {
@@ -53,8 +61,11 @@
   align-items: center;
 
   @include desktop-w {
+    margin-top: -141px;
     padding-left: 232px;
     padding-right: 232px;
+
+    transform: rotate(2deg);
   }
 }
 
@@ -104,6 +115,10 @@
 
   @include desktop-w {
     position: relative;
+
+    &::before {
+      transform: rotate(-2deg);
+    }
   }
 }
 
@@ -115,12 +130,12 @@
     &::before {
       content: "";
       position: absolute;
-      left: -206px;
-      top: -66px;
-      width: 391px;
-      height: 391px;
-      background-size: 500px;
-      background-position: left 20%;
+      left: -228px;
+      top: -114px;
+      width: 420px;
+      height: 420px;
+      background-size: contain;
+      background-position: center;
       background-repeat: no-repeat;
       background-image: url("../../img/desktop/slider-mark.webp");
     }
@@ -136,10 +151,10 @@
     &::before {
       content: "";
       position: absolute;
-      right: -4px;
-      top: -80px;
-      width: 153px;
-      height: 184px;
+      right: -145px;
+      top: -147px;
+      width: 300px;
+      height: 300px;
       background-position: center;
       background-size: contain;
       background-repeat: no-repeat;
@@ -159,10 +174,11 @@
     &::before {
       content: "";
       position: absolute;
-      left: -170px;
-      top: -80px;
-      width: 320px;
-      height: 320px;
+      left: auto;
+      right: -161px;
+      top: 191px;
+      width: 396px;
+      height: 494px;
       background-position: center;
       background-size: contain;
       background-repeat: no-repeat;
@@ -185,6 +201,10 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+
+  @include desktop-w {
+    display: none;
+  }
 }
 
 .events__slider-button {

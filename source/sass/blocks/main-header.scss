@@ -36,7 +36,8 @@
       rgba(131, 65, 239, 20%),
       rgba(63, 104, 249, 20%)
     ),
-    radial-gradient(ellipse at center,#8241EF,rgba(130, 65, 239, 30%), rgba(130, 65, 239, 20%), rgba(130, 65, 239, 6%))
+    // radial-gradient(ellipse at center,#8241EF,rgba(130, 65, 239, 30%), rgba(130, 65, 239, 20%), rgba(130, 65, 239, 6%))
+    // можно сделать фиолетовый эллипс градиентом!
     ;
   }
 }
@@ -68,10 +69,12 @@
 
     &::after {
       background-image: url("../../img/desktop/header-background.webp");
-      width: 823px;
-      height: 716px;
-      right: 75px;
+      width: 1030px;
+      height: 827px;
+      right: 0px;
+      top: -20px;
       left: auto;
+      bottom: auto;
     }
   }
 }
@@ -101,13 +104,11 @@
   width: 75%;
 
   color: var(--black1);
-  // text-shadow: 0px 4px 4px rgba(0, 0, 0, 25%);
   font-family: var(--yandex-black-font);
   font-size: 36px;
   line-height: 34px;
   letter-spacing: -2px;
   vertical-align: bottom;
-  // -webkit-text-stroke: 1px #000000;
 
   margin-bottom: 35px;
 
@@ -117,8 +118,6 @@
 
   @include desktop-w {
     position: relative;
-    // -webkit-text-stroke: 0;
-    // text-shadow: none;
     font-size: 72px;
     line-height: 66px;
     width: 420px;
@@ -134,15 +133,11 @@
   letter-spacing: 0;
   color: var(--black1);
   font-size: 18px;
-  // text-shadow: 0px 4px 4px rgba(0, 0, 0, 25%);
   line-height: 22px;
-  // -webkit-text-stroke: 2px #000000;
 
   @include desktop-w {
     width: 420px;
     font-size: 24px;
-    // -webkit-text-stroke: 0;
-    // text-shadow: none;
     line-height: 30px;
     margin-bottom: 44px;
   }
