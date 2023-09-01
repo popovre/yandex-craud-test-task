@@ -5,6 +5,7 @@
   @include desktop-w {
     padding-left: 260px;
     padding-right: 285px;
+    padding-bottom: 111px;
 
     display: flex;
     flex-wrap: wrap;
@@ -20,18 +21,28 @@
   &::before {
     content: "";
     position: absolute;
-    left: calc(50% - (360px / 2));
-    bottom: 0;
-    width: 360px;
-    height: 374px;
+    left: calc(50% - (359px / 2));
+    bottom: 8px;
+    width: 359px;
+    height: 359px;
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
-    background-image: url("../../img/mobile/subcribe-cashback-background.webp");
+    background-image: url("../../img/mobile/subscribe-cashback-background.webp"), radial-gradient(128px 132px at 195px 225px,rgba(130,65,239,.29),#fff);
   }
 
   @include desktop-w {
     width: 419px;
+    padding-bottom: 0;
+
+    &::before {
+      width: 785px;
+      height: 764px;
+      background-image: url("../../img/desktop/subscribe-background.webp");
+      left: 383px;
+      top: -188px;
+      bottom: auto;
+    }
   }
 }
 
@@ -65,8 +76,34 @@
   }
 }
 
+.subscribe__options-wrapper {
+  @include desktop-w {
+    position: relative;
+    width: 419px;
+    align-self: flex-end;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: -714px;
+      top: -128px;
+      bottom: auto;
+      width: 710px;
+      height: 725px;
+      background-position: center;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-image: url("../../img/desktop/subscribe-cashback-background.webp");
+    }
+  }
+}
+
 .subscribe__options {
   margin-bottom: 32px;
+
+  @include desktop-w {
+    margin-bottom: 48px;
+  }
 }
 
 .subscribe__button {
@@ -89,6 +126,14 @@
   background-color: var(--yellow1);
   box-shadow: 0 4px 64px 0 rgba(255, 222, 64, 59%);
   margin: 0 auto;
+
+  @include desktop-w {
+    max-width: 281px;
+    min-height: 61px;
+    margin-right: auto;
+    margin-left: 0;
+    font-size: 24px;
+  }
 
 }
 

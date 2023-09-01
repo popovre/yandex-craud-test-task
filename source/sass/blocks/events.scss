@@ -65,7 +65,6 @@
     padding-left: 232px;
     padding-right: 232px;
 
-    transform: rotate(2deg);
   }
 }
 
@@ -84,10 +83,10 @@
   &::before {
     content: "";
     position: absolute;
-    right: -4px;
+    right: -16px;
     top: -80px;
-    width: 153px;
-    height: 184px;
+    width: 120px;
+    height: 140px;
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
@@ -101,6 +100,8 @@
     grid-template-rows:    455px 203px 455px;
     align-content: space-between;
     gap: 24px;
+    transform: rotate(2deg);
+
 
     &::before {
       content: none;
