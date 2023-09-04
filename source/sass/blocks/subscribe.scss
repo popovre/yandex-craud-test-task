@@ -71,7 +71,7 @@
   font-family: var(--yandex-medium-font);
   font-weight: 500;
 
-  @include desktop-w {
+  @include tablet-w {
     font-size: 24px;
   }
 }
@@ -127,12 +127,15 @@
   box-shadow: 0 4px 64px 0 rgba(255, 222, 64, 59%);
   margin: 0 auto;
 
-  @include desktop-w {
+  @include tablet-w {
     max-width: 281px;
     min-height: 61px;
+    font-size: 24px;
+  }
+
+  @include desktop-w {
     margin-right: auto;
     margin-left: 0;
-    font-size: 24px;
   }
 
 }

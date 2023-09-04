@@ -1,32 +1,51 @@
-import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.mjs';
+const DESKTOPWIDTH = 1440;
 
-const initSlider = () => {
-  const swiper = new Swiper(".swiper",{
-    loop: true,
+const main = document.querySelector("main");
+
+const initSwiper = () => {
+  const swiper = new Swiper(".swiper", {
+    init: true,
+    loop: false,
     slidesPerView: 1,
     navigation: {
-        nextEl: ".events__slider-right",
-        prevEl: ".events__slider-left"
+      nextEl: ".events__slider-right",
+      prevEl: ".events__slider-left",
     },
     breakpoints: {
-        650: {
-            slidesPerView: 1,
-            spaceBetween: 100
-        },
-        600: {
-            slidesPerView: 1,
-            spaceBetween: 40
-        },
-        450: {
-            slidesPerView: 1,
-            spaceBetween: 30
-        },
-        375: {
-            slidesPerView: 1,
+      950: {
+        slidesPerView: 2,
+        spaceBetween: 200,
+      },
+      750: {
+        slidesPerView: 2,
+        spaceBetween: 200,
+      },
+      550: {
+        slidesPerView: 2,
+        spaceBetween: 100,
+      },
+      375: {
+        slidesPerView: 1,
+        spaceBetween: 20,
+      },
+    },
+
+    on: {
+      resize: function () {
+        if (main.offsetWidth >= DESKTOPWIDTH) {
+          swiper.destroy(false, true);
         }
-    }
+      },
+    },
   });
+};
+
+if (!window.matchMedia(`(min-width: ${DESKTOPWIDTH}px)`).matches) {
+  initSwiper();
 }
 
-console.log(document.querySelector('main').offsetWidth)
-
+window.addEventListener("resize", function () {
+  if (!window.matchMedia(`(min-width: ${DESKTOPWIDTH}px)`).matches) {
+    initSwiper();
+  }
+});
