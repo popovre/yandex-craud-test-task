@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
     <title>go scooter pass</title>
   </head>
   <body>
@@ -78,50 +82,54 @@
             Attaque de Panique
           </p>
         </div>
-        <div class="events__slider">
-          <ul class="events__slider-list">
-            <li class="events__slider-item events__slider-man">
-              <img
-                src="./img/mobile/slider-image-man.webp"
-                alt="картинка с события в Яндекс Самокат"
-              />
-            </li>
-            <li class="events__slider-item events__slider-people">
-              <img
-                src="./img/mobile/slider-image-people.webp"
-                alt="картинка с события в Яндекс Самокат"
-              />
-            </li>
-            <li class="events__slider-item events__slider-girl">
-              <img
-                src="./img/mobile/slider-image-girl.webp"
-                alt="картинка с события в Яндекс Самокат"
-              />
-            </li>
-            <li class="events__slider-item events__slider-bag">
-              <img
-                src="./img/mobile/slider-image-bag.webp"
-                alt="картинка с события в Яндекс Самокат"
-              />
-            </li>
-          </ul>
-          <div class="events__slider-buttons">
-            <button
-              class="events__slider-left events__slider-button"
-              type="button"
-            >
-              <svg class="events__slider-left-svg" width="27" height="24">
-                <use xlink:href="img/icons/sprite.svg#arrow-left"></use>
-              </svg>
-            </button>
-            <button
-              class="events__slider-right events__slider-button"
-              type="button"
-            >
-              <svg class="events__slider-right-svg" width="27" height="24">
-                <use xlink:href="img/icons/sprite.svg#arrow-right"></use>
-              </svg>
-            </button>
+        <div class="events__slider-container">
+          <div class="events__slider swiper">
+            <ul class="events__slider-list swiper-wrapper">
+              <li class="events__slider-item events__slider-man swiper-slide">
+                <img
+                  src="./img/mobile/slider-image-man.webp"
+                  alt="картинка с события в Яндекс Самокат"
+                />
+              </li>
+              <li
+                class="events__slider-item events__slider-people swiper-slide"
+              >
+                <img
+                  src="./img/mobile/slider-image-people.webp"
+                  alt="картинка с события в Яндекс Самокат"
+                />
+              </li>
+              <li class="events__slider-item events__slider-girl swiper-slide">
+                <img
+                  src="./img/mobile/slider-image-girl.webp"
+                  alt="картинка с события в Яндекс Самокат"
+                />
+              </li>
+              <li class="events__slider-item events__slider-bag swiper-slide">
+                <img
+                  src="./img/mobile/slider-image-bag.webp"
+                  alt="картинка с события в Яндекс Самокат"
+                />
+              </li>
+            </ul>
+            <div class="events__slider-buttons">
+              <button
+                class="events__slider-left events__slider-button"
+                type="button"
+              >
+                <svg class="events__slider-left-svg" width="27" height="24">
+                  <use xlink:href="img/icons/sprite.svg#arrow-left"></use>
+                </svg>
+              </button>
+              <button
+                class="events__slider-right events__slider-button"
+                type="button"
+              >
+                <svg class="events__slider-right-svg" width="27" height="24">
+                  <use xlink:href="img/icons/sprite.svg#arrow-right"></use>
+                </svg>
+              </button>
+            </div>
           </div>
         </div>
       </section>
@@ -171,4 +179,5 @@
       </p>
     </footer>
   </body>
+  <script type="module" src="js/script.js"></script>
 </html>
