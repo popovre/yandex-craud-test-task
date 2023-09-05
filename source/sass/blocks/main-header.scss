@@ -20,22 +20,22 @@
 
   @include desktop-w {
     background: linear-gradient(
-      to bottom,
-      rgba(255, 255, 255, 0%),
-      rgba(255, 255, 255, 100%)
-    ),
-    linear-gradient(
-      0.25turn,
-      rgba(255, 255, 255, 20%),
-      rgba(255, 255, 255, 20%)
-    ),
-    linear-gradient(
-      0.25turn,
-      rgba(255, 92, 77, 20%),
-      rgba(235, 70, 159, 20%),
-      rgba(131, 65, 239, 20%),
-      rgba(63, 104, 249, 20%)
-    );
+        to bottom,
+        rgba(255, 255, 255, 0%),
+        rgba(255, 255, 255, 100%)
+      ),
+      linear-gradient(
+        0.25turn,
+        rgba(255, 255, 255, 20%),
+        rgba(255, 255, 255, 20%)
+      ),
+      linear-gradient(
+        0.25turn,
+        rgba(255, 92, 77, 20%),
+        rgba(235, 70, 159, 20%),
+        rgba(131, 65, 239, 20%),
+        rgba(63, 104, 249, 20%)
+      );
   }
 }
 
@@ -117,7 +117,7 @@
   letter-spacing: -1px;
   vertical-align: bottom;
 
-  margin-bottom:27px;
+  margin-bottom: 27px;
 
   &::first-letter {
     text-transform: uppercase;
@@ -172,7 +172,12 @@
   position: relative;
   -webkit-text-stroke: 0;
   border-radius: 15px;
-  background: linear-gradient( to bottom, rgba(241, 241, 241, 60%), rgba(241, 241, 241, 60%) ), radial-gradient(circle at bottom left, #e0b8ff, #b6b9ff);
+  background: linear-gradient(
+      to bottom,
+      rgba(241, 241, 241, 60%),
+      rgba(241, 241, 241, 60%)
+    ),
+    radial-gradient(circle at bottom left, #e0b8ff, #b6b9ff);
 
   @include desktop-w {
     padding-top: 2px;
@@ -185,7 +190,6 @@
   padding-right: 8px;
   padding-top: 1px;
   padding-bottom: 1px;
-
 
   background: radial-gradient(circle at bottom left, #b6b9ff, #e0b8ff);
   border-radius: 15px;
@@ -213,7 +217,7 @@
     padding-right: 14px;
 
     &::after {
-      left: 10px
+      left: 10px;
     }
   }
 }
@@ -238,6 +242,17 @@
 
   border-radius: 36px;
   background-color: var(--yellow1);
+
+  &:hover {
+    transition: 1s;
+    box-shadow: 0 4px 64px 10px rgba(255, 222, 64, 99%);
+    opacity: 95%;
+  }
+
+  &:active {
+    transition: 1s;
+    opacity: 80%;
+  }
 
   @include tablet-w {
     display: block;

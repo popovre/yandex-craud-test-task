@@ -39,7 +39,7 @@
   flex-wrap: wrap;
   row-gap: 24px;
   justify-content: center;
-  width: calc(212/311 * 100%);
+  width: calc(212 / 311 * 100%);
   margin-left: 99px;
 
   @include desktop-w {
@@ -50,7 +50,6 @@
     justify-content: flex-start;
     width: 100%;
   }
-
 }
 
 .advantages__item {
@@ -91,7 +90,7 @@
 }
 
 .advantages__item-start {
-  width: calc(190/212 * 100%);
+  width: calc(190 / 212 * 100%);
 
   &::before {
     background-image: url("../../img/mobile/advantages-start.webp");
@@ -108,14 +107,13 @@
 }
 
 .advantages__item-friends {
-
   &::before {
     background-image: url("../../img/mobile/advantages-friends.webp");
   }
 
   @include desktop-w {
     &::before {
-      width:101px;
+      width: 101px;
       height: 92px;
       top: -13px;
       left: 1px;
@@ -124,13 +122,11 @@
 }
 
 .advantages__item-pause {
-
   &::before {
     background-image: url("../../img/mobile/advantages-pause.webp");
   }
 }
 .advantages__item-change {
-
   &::before {
     background-image: url("../../img/mobile/advantages-change.webp");
   }

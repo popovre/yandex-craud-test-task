@@ -31,7 +31,12 @@
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
-    background-image: url("../../img/mobile/subscribe-cashback-background.webp"), radial-gradient(128px 132px at 195px 225px,rgba(130,65,239,.29),#fff);
+    background-image: url("../../img/mobile/subscribe-cashback-background.webp"),
+      radial-gradient(
+        128px 132px at 195px 225px,
+        rgba(130, 65, 239, 0.29),
+        #fff
+      );
   }
 
   @include desktop-w {
@@ -58,7 +63,7 @@
   line-height: 1;
   letter-spacing: -1px;
   vertical-align: top;
-  width: calc(290/311 * 100%);
+  width: calc(290 / 311 * 100%);
   font-weight: 900;
 
   @include desktop-w {
@@ -130,6 +135,12 @@
   box-shadow: 0 4px 64px 0 rgba(255, 222, 64, 59%);
   margin: 0 auto;
 
+  &:hover {
+    transition: 1s;
+    box-shadow: 0 4px 64px 10px rgba(255, 222, 64, 99%);
+    opacity: 95%;
+  }
+
   @include tablet-w {
     max-width: 281px;
     min-height: 61px;
@@ -140,6 +151,4 @@
     margin-right: auto;
     margin-left: 0;
   }
-
 }
-

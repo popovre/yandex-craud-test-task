@@ -2,7 +2,7 @@
   padding-bottom: 69px;
 
   @include desktop-w {
-    padding-bottom: 73px
+    padding-bottom: 73px;
   }
 }
 
@@ -26,7 +26,7 @@
   line-height: 1;
   letter-spacing: -1px;
   vertical-align: top;
-  width: calc(290/311 * 100%);
+  width: calc(290 / 311 * 100%);
   font-weight: 900;
 
   @include desktop-w {
@@ -72,7 +72,12 @@
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
-    background-image: url("../../img/mobile/slider-clip.webp"), radial-gradient(35px 27px at 45px 55px,rgba(193,164,255,0.2),rgba(255,255,255,0));
+    background-image: url("../../img/mobile/slider-clip.webp"),
+      radial-gradient(
+        35px 27px at 45px 55px,
+        rgba(193, 164, 255, 0.2),
+        rgba(255, 255, 255, 0)
+      );
   }
 
   @include tablet-w {
@@ -107,7 +112,7 @@
     display: grid;
     width: 934px;
     grid-template-columns: 455px 455px;
-    grid-template-rows:    455px 203px 455px;
+    grid-template-rows: 455px 203px 455px;
     align-content: space-between;
     gap: 24px;
     transform: rotate(2deg);
@@ -149,7 +154,6 @@
 }
 
 .events__slider-people {
-
   @include desktop-w {
     display: block;
 
@@ -169,7 +173,6 @@
 }
 
 .events__slider-girl {
-
   @include desktop-w {
     display: block;
     grid-area: 2/2/4/-1;
@@ -192,7 +195,6 @@
 }
 
 .events__slider-bag {
-
   @include desktop-w {
     display: block;
   }
@@ -222,6 +224,15 @@
   display: flex;
   justify-content: center;
   align-items: center;
+
+  &:hover:not(.swiper-button-disabled) {
+    transition: 1s;
+    background-color: var(--yellow2);
+  }
+
+  &:active:not(.swiper-button-disabled) {
+    opacity: 80%;
+  }
 }
 
 .swiper-button-disabled {
