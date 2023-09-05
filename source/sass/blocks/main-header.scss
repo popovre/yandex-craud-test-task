@@ -35,17 +35,14 @@
       rgba(235, 70, 159, 20%),
       rgba(131, 65, 239, 20%),
       rgba(63, 104, 249, 20%)
-    ),
-    // radial-gradient(ellipse at center,#8241EF,rgba(130, 65, 239, 30%), rgba(130, 65, 239, 20%), rgba(130, 65, 239, 6%))
-    // можно сделать фиолетовый эллипс градиентом!
-    ;
+    );
   }
 }
 
 .main-header__wrapper {
   @include content;
   padding-top: var(--mobile-padding);
-  padding-bottom: 348px;
+  padding-bottom: 344px;
   position: relative;
 
   &::after {
@@ -74,7 +71,7 @@
 
   @include desktop-w {
     padding-top: 125px;
-    padding-bottom: 124px;
+    padding-bottom: 118px;
     padding-right: 75px;
 
     &::after {
@@ -82,7 +79,7 @@
       width: 1030px;
       height: 827px;
       right: 0px;
-      top: -20px;
+      top: -10px;
       left: auto;
       bottom: auto;
     }
@@ -95,10 +92,10 @@
 
 .main-header__logo-link {
   display: block;
-  margin-bottom: 32px;
+  margin-bottom: 30px;
 
   @include desktop-w {
-    margin-bottom: 72px;
+    margin-bottom: 67px;
   }
 }
 
@@ -111,16 +108,16 @@
 
 .main-header__title {
   margin: 0;
-  width: 75%;
+  width: 65%;
 
   color: var(--black1);
   font-family: var(--yandex-black-font);
   font-size: 36px;
-  line-height: 34px;
-  letter-spacing: -2px;
+  line-height: 35px;
+  letter-spacing: -1px;
   vertical-align: bottom;
 
-  margin-bottom: 35px;
+  margin-bottom:27px;
 
   &::first-letter {
     text-transform: uppercase;
@@ -134,7 +131,7 @@
   @include desktop-w {
     position: relative;
     font-size: 72px;
-    line-height: 66px;
+    line-height: 70px;
     width: 420px;
     z-index: 2;
   }
@@ -159,7 +156,7 @@
     margin-bottom: 22px;
     width: 420px;
     font-size: 24px;
-    line-height: 30px;
+    line-height: 31px;
   }
 
   @include desktop-w {
@@ -247,7 +244,7 @@
     position: relative;
 
     left: auto;
-    bottom: auto;
+    bottom: 5px;
 
     width: 318px;
     min-height: 65px;

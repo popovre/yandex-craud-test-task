@@ -1,6 +1,10 @@
 .advantages__wrapper {
   @include content;
-  padding-bottom: 72px;
+  padding-bottom: 66px;
+
+  @include desktop-w {
+    padding-bottom: 127px;
+  }
 }
 
 .advantages__title {
@@ -9,11 +13,11 @@
   color: var(--black1);
   font-family: var(--yandex-black-font);
   font-size: 32px;
-  line-height: 27px;
-  letter-spacing: -2px;
+  line-height: 30px;
+  letter-spacing: -1px;
   vertical-align: top;
 
-  margin-bottom: 32px;
+  margin-bottom: 30px;
 
   &::first-letter {
     text-transform: uppercase;
@@ -21,8 +25,8 @@
 
   @include desktop-w {
     font-size: 56px;
-    line-height: 48px;
-    width: 600px;
+    line-height: 50px;
+    width: 640px;
     margin-bottom: 48px;
   }
 }
@@ -92,12 +96,30 @@
   &::before {
     background-image: url("../../img/mobile/advantages-start.webp");
   }
+
+  @include desktop-w {
+    &::before {
+      width: 111px;
+      height: 95px;
+      top: -8px;
+      left: -14px;
+    }
+  }
 }
 
 .advantages__item-friends {
 
   &::before {
     background-image: url("../../img/mobile/advantages-friends.webp");
+  }
+
+  @include desktop-w {
+    &::before {
+      width:101px;
+      height: 92px;
+      top: -13px;
+      left: 1px;
+    }
   }
 }
 
@@ -111,6 +133,15 @@
 
   &::before {
     background-image: url("../../img/mobile/advantages-change.webp");
+  }
+
+  @include desktop-w {
+    &::before {
+      width: 109px;
+      height: 101px;
+      top: -9px;
+      left: -19px;
+    }
   }
 }
 

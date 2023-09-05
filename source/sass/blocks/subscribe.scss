@@ -1,28 +1,31 @@
 .subscribe__wrapper {
   @include content;
-  padding-bottom: 90px;
+  padding-bottom: 70px;
 
   @include desktop-w {
     padding-left: 260px;
     padding-right: 285px;
-    padding-bottom: 111px;
+    padding-bottom: 116px;
 
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    row-gap: 128px;
+    row-gap: 120px;
+
+    overflow-y: inherit;
+    overflow-x: clip;
   }
 }
 
 .subscribe__cashback-wrapper {
   position: relative;
-  padding-bottom: 376px;
+  padding-bottom: 365px;
 
   &::before {
     content: "";
     position: absolute;
     left: calc(50% - (359px / 2));
-    bottom: 8px;
+    bottom: 6px;
     width: 359px;
     height: 359px;
     background-position: center;
@@ -36,11 +39,11 @@
     padding-bottom: 0;
 
     &::before {
-      width: 785px;
-      height: 764px;
+      width: 892px;
+      height: 892px;
       background-image: url("../../img/desktop/subscribe-background.webp");
-      left: 383px;
-      top: -188px;
+      left: 297px;
+      top: -233px;
       bottom: auto;
     }
   }
@@ -48,19 +51,19 @@
 
 .subscribe__title {
   margin: 0;
-  margin-bottom: 32px;
+  margin-bottom: 24px;
 
   font-family: var(--yandex-black-font);
   font-size: 32px;
   line-height: 1;
-  letter-spacing: -2px;
+  letter-spacing: -1px;
   vertical-align: top;
   width: calc(290/311 * 100%);
   font-weight: 900;
 
   @include desktop-w {
     font-size: 48px;
-    margin-bottom: 48px;
+    margin-bottom: 35px;
   }
 }
 
@@ -86,7 +89,7 @@
       content: "";
       position: absolute;
       left: -714px;
-      top: -128px;
+      top: -120px;
       bottom: auto;
       width: 710px;
       height: 725px;
@@ -99,10 +102,10 @@
 }
 
 .subscribe__options {
-  margin-bottom: 32px;
+  margin-bottom: 28px;
 
   @include desktop-w {
-    margin-bottom: 48px;
+    margin-bottom: 40px;
   }
 }
 
