@@ -35,9 +35,31 @@ return gulp.src('source/*.html')
 .pipe(gulp.dest('build'));
 }
 
+// vendors
+const vendorJS = () => {
+  const modules = [
+    'node_modules/swiper/swiper-bundle.min.js',
+    'node_modules/swiper/swiper-bundle.min.js.map',
+  ];
+
+  return gulp.src(modules)
+    .pipe(gulp.dest('build/js'));
+};
+
+const vendorCSS = () => {
+  const modules = [
+    'node_modules/swiper/swiper-bundle.min.css',
+  ];
+
+  return gulp.src(modules)
+    .pipe(gulp.dest('build/css/pages'));
+};
+
 // Scripts
 
 const scripts = () => {
+  vendorJS();
+  vendorCSS();
 return gulp.src('source/js/script.js')
 .pipe(gulp.dest('build/js'))
 .pipe(browser.stream());

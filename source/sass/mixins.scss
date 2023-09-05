@@ -75,14 +75,9 @@ $mobile-width: 375px;
   padding-left: var(--mobile-padding);
   padding-right: var(--mobile-padding);
 
-  // @include tablet-w () {
-  //   padding-left: var(--tablet-padding);
-  //   padding-right: var(--tablet-padding);
-  // }
-
   @include desktop-w () {
     max-width: var(--desktop-width);
     padding-left: var(--desktop-l-padding);
-    padding-right: var(--desktop-r-padding);
+    padding-right: var(--desktop-l-padding);
   }
 }

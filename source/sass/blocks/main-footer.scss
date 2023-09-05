@@ -1,0 +1,25 @@
+.main-footer {
+  @include content;
+  padding-bottom: 72px;
+
+  @include desktop-w {
+    padding-bottom: 128px;
+    padding-left: 260px;
+    padding-right: 274px;
+  }
+}
+
+.main-footer__text {
+  margin: 0;
+  color: var(--grey2);
+  font-size: 10px;
+  line-height: 120%;
+
+  a {
+    text-decoration: underline;
+  }
+
+  @include desktop-w {
+    font-size: 13px;
+  }
+}

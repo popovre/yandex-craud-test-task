@@ -4,16 +4,22 @@
   --default-white: #ffffff;
   --arial: "Arial", "sans-serif", "Verdana";
   --tablet-width: 768px;
-  --desktop-width: 1366px;
-  --mobile-width: 320px;
+  --desktop-width: 1440px;
+  --mobile-width: 375px;
 
   // custom
-  --main-font: "Roboto", "Arial", "sans-serif";
-  --playfair-font: "Playfair Display", "Arial", "sans-serif";
-  --prata-font: "Prata", "Arial", "sans-serif";
+  --main-font: "yandexRegular", "Arial", "sans-serif";
+  --yandex-black-font: "yandexBlack", "Arial", "sans-serif";
+  --yandex-medium-font: "yandexMedium", "Arial", "sans-serif";
 
-  --mobile-padding: 20px;
+  --mobile-padding: 32px;
   --tablet-padding: 70px;
   --desktop-r-padding: 98px;
-  --desktop-l-padding: 94px;
+  --desktop-l-padding: 262px;
+  --black1: #21201F;
+  --white1: #f1f1f1;
+  --grey1: #808080;
+  --grey2: #c5c5c5;
+  --yellow1: #FFDE40;
+  --yellow2: #fcd307;
 }
