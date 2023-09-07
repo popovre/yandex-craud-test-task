@@ -31,7 +31,7 @@
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
-    background-image: url("../../img/mobile/subscribe-cashback-background.webp"),
+    background-image: url("../img/mobile/subscribe-cashback-background.webp"),
       radial-gradient(
         128px 132px at 195px 225px,
         rgba(130, 65, 239, 0.29),
@@ -46,7 +46,7 @@
     &::before {
       width: 892px;
       height: 892px;
-      background-image: url("../../img/desktop/subscribe-background.webp");
+      background-image: url("../img/desktop/subscribe-background.webp");
       left: 297px;
       top: -233px;
       bottom: auto;
@@ -101,7 +101,7 @@
       background-position: center;
       background-size: contain;
       background-repeat: no-repeat;
-      background-image: url("../../img/desktop/subscribe-cashback-background.webp");
+      background-image: url("../img/desktop/subscribe-cashback-background.webp");
     }
   }
 }

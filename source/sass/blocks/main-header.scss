@@ -48,7 +48,7 @@
   &::after {
     content: "";
     position: absolute;
-    background-image: url("../../img/mobile/header-background.webp");
+    background-image: url("../img/mobile/header-background.webp");
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
@@ -75,7 +75,7 @@
     padding-right: 75px;
 
     &::after {
-      background-image: url("../../img/desktop/header-background.webp");
+      background-image: url("../img/desktop/header-background.webp");
       width: 1030px;
       height: 827px;
       right: 0px;
