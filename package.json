@@ -2,7 +2,7 @@
   "name": "yandex-craud",
   "private": true,
   "description": "Тестовое задание yandex-craud",
-  "homepage": "https://popovre.github.io/yandex-craud-test-task",
+  "homepage": "https://popovre.github.io/yandex-craud-test-task/",
   "devDependencies": {
     "@htmlacademy/editorconfig-cli": "1.0.0",
     "autoprefixer": "10.4.0",
@@ -30,7 +30,6 @@
     "lint": "npm run editorconfig && npm run stylelint",
     "build": "gulp build",
     "start": "gulp",
-    "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
   "browserslist": [
