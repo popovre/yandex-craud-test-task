@@ -1,12 +1,14 @@
 {
-  "name": "cat-energy-25",
+  "name": "yandex-craud",
   "private": true,
-  "description": "Проект «Кэт энерджи» от HTML Academy",
+  "description": "Тестовое задание yandex-craud",
+  "homepage": "https://popovre.github.io/yandex-craud-test-task",
   "devDependencies": {
     "@htmlacademy/editorconfig-cli": "1.0.0",
     "autoprefixer": "10.4.0",
     "browser-sync": "2.27.7",
     "del": "6.0.0",
+    "gh-pages": "^6.0.0",
     "gulp": "4.0.2",
     "gulp-dart-sass": "^1.0.2",
     "gulp-htmlmin": "5.0.1",
@@ -27,7 +29,8 @@
     "stylelint": "stylelint \"source/sass/**/*.scss\" --syntax scss",
     "lint": "npm run editorconfig && npm run stylelint",
     "build": "gulp build",
-    "start": "gulp"
+    "start": "gulp",
+    "deploy": "gh-pages -d build"
   },
   "browserslist": [
     "last 2 versions",
